@@ -4,6 +4,7 @@ import math
 from line import Line
 from vector import Vector
 
+
 class Point():
     """
     Point in 3-dimensional space
