@@ -1,7 +1,7 @@
 from __future__ import annotations
 import math
 
-from line import Line
+#from line import Line
 from vector import Vector
 
 
@@ -22,13 +22,3 @@ class Point():
                      self.y - point.y,
                      self.z - point.z)
     
-    def distance_to_point(self, point:Point) -> float:
-        return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2 + (self.z - point.z)**2)
-
-    def distance_to_line(self, line:Line) -> float:
-        vector_to_line = self - line.point
-        vector_multiplication = vector_to_line * line.directing_vector
-        return vector_multiplication.magnitude() / line.directing_vector.magnitude()
-
-
-
