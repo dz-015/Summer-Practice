@@ -17,5 +17,5 @@ class Vector():
                      (self.z * another_vector.x) - (self.x * another_vector.z),
                      (self.x * another_vector.y) - (self.y * another_vector.x))
     
-    def magnitude(self):
+    def magnitude(self) -> float:
         return math.sqrt(self.x**2 + self.y**2 + self.z**2)
