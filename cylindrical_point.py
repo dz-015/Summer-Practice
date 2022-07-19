@@ -10,6 +10,11 @@ class CylindricalPoint():
         self.z_offset = z_offset
     
     def convert(self) -> Point:
+        """Converts Cylindrical Point to a regular Point
+
+        Returns:
+            Point: Converted Cylindrical Point
+        """
         return Point(
             self.length * math.cos(self.angle),
             self.length * math.sin(self.angle),
